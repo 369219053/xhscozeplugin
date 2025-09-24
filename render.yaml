@@ -7,8 +7,3 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python api_service.py
     healthCheckPath: /health
-    envVars:
-      - key: PORT
-        value: 10000
-      - key: PYTHON_VERSION
-        value: 3.9.16
