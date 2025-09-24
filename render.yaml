@@ -5,5 +5,5 @@ services:
     region: singapore
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: python api_service.py
+    startCommand: uvicorn api_service:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
